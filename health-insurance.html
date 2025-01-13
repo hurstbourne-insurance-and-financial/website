@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover comprehensive health insurance options tailored to your needs at Hurstbourne Insurance and Financial LLC.">
+    <title>Health Insurance | Hurstbourne Insurance and Financial LLC</title>
+    <link href="styles.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(135deg, #283c63, #6394bc);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            margin-top: 80px;
+        }
+
+
+        .hero p {
+            font-size: 1.4em;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .plan {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+        }
+
+        .plan h3 {
+            font-size: 1.8em;
+            color: #6394bc;
+            margin-bottom: 10px;
+        }
+
+        .plan p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .plan a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #6394bc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .plan a:hover {
+            background: #1f5a83;
+        }
+
+        .cta {
+            text-align: center;
+            background: #2c3e50;
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .cta h3 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #fff;
+            background: #6394bc;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cta a:hover {
+            background: #1f5a83;
+        }
+        .glossary {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.glossary h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.terms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.term {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.term:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.term h4 {
+    font-size: 1.5em;
+    color: #6394bc;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.term p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+    display: none;
+    line-height: 1.5;
+}
+.disclosure-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.85em;
+    font-style: italic;
+    color: #555;
+    cursor: pointer;
+}
+
+.disclosure-section h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.disclosure-section h3 span {
+    font-size: 1.2em;
+    transition: transform 0.2s;
+}
+
+.disclosure-content {
+    display: none;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.disclosure-content p {
+    margin: 5px 0;
+}
+
+.disclosure-section.open h3 span {
+    transform: rotate(180deg);
+}
+
+
+    </style>
+</head>
+<body>
+    <hr>
+    <nav>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="just-logo-blue.png" alt="Hurstbourne Logo" class="logo-image">
+            </a>
+            <div class="logo-text">Hurstbourne Insurance and Financial LLC</div>
+        </div>
+        
+    
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Insurance</a>
+                    <ul>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li>
+                            <a href="medicare.html">Medicare</a>
+                            <ul>
+                                <li><a href="medigap.html">Medicare Supplement</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="disability.html">Disability</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="dental.html">Dental</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="group.html">Business/Group</a></li>
+                        <li><a href="annuity.html">Annuity</a></li>
+    
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hurstbourne Wealth Management LLC</a>
+                    <ul>
+                        <li><a href="investment.html">Investments</a></li>
+                        <li><a href="estate.html">Estate Planning</a></li>
+                        <li><a href="retirement.html">Retirement</a></li>
+                        <li><a href="education-savings-plans.html">Education Savings Plans</a></li>
+                        <li><a href="financial-plan.html">Comprehensive Financial Planning</a></li>
+                        <li><a href="advisor.html">Talk to a Financial Advisor</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </hr>
+    <section class="hero">
+        <h1>Health Insurance Made Simple</h1>
+        <p><em>Protect yourself and your family with tailored health insurance solutions.</p>
+        </em></section>
+
+        <div class="section">
+            <h2>Our Health Insurance Plans</h2>
+            <div class="plans">
+                <div class="plan">
+                    <h3>Individual Plans</h3>
+                    <p>Personalized health coverage for individuals looking for comprehensive protection.</p>
+                    <a href="#" id="learnMoreIndividual" class="learn-more">Quote</a>
+                </div>
+                <div class="plan">
+                    <h3>Family Plans</h3>
+                    <p>Keep your entire family secure with flexible and affordable health plans.</p>
+                    <a href="#" id="learnMoreFamily" class="learn-more">Quote</a>
+                </div>
+                <div class="plan">
+                    <h3>Senior Plans</h3>
+                    <p>Specialized plans catering to the needs of seniors for peace of mind.</p>
+                    <a href="#" id="learnMoreSenior" class="learn-more">Quote</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="formModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>An Expert Will Provide You With The Cost and Details Of a Plan</h3>
+                <form id="contactForm" action="https://formsubmit.co/a3ed71673283b7f9df405b28ac6194cd" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="Your First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Your Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tobacco">Do You Use Tobacco?</label>
+                            <select id="tobacco" name="tobacco" required>
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">Zip Code</label>
+                            <input type="text" id="zipcode" name="zipcode" placeholder="Your Zip Code" required>
+                        </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            // Modal logic
+            const modal = document.getElementById('formModal');
+            const closeModalButton = document.querySelector('.modal .close');
+        
+            // Attach event listeners to all "Learn More" buttons
+            document.querySelectorAll('.learn-more').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent link navigation
+                    modal.style.display = 'flex'; // Show modal
+                });
+            });
+        
+            // Close modal when clicking the close button
+            closeModalButton.addEventListener('click', () => {
+                modal.style.display = 'none'; // Hide modal
+            });
+        
+            // Close modal when clicking outside the modal content
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        </script>
+        
+<style>/* Section Styling */
+
+  
+    /* Modal Styling */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal-content {
+        background-color: #fff;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
+        text-align: left;
+        position: relative;
+    }
+    
+    .modal-content h3 {
+        margin-top: 0;
+    }
+    
+    .modal-content .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: #aaa;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .modal-content .form-row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .modal-content .form-group {
+        flex: 1;
+    }
+    
+    .modal-content label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .modal-content input,
+    .modal-content select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .modal-content button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #6394bc;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .modal-content button:hover {
+        background-color: #507fa3;
+    }
+    </style>
+    <div class="cta">
+        <h3>Which plan is right for me?</h3>
+        <p><em>Let a professional help find what plan is right for you</em></p>
+        <a href="contact.html">We&#39;re here for you</a>
+    </div>
+
+
+    <div class="glossary">
+        <h2>Health Insurance Terms Defined</h2>
+        <div class="terms-grid">
+            <div class="term">
+                <h4>Premium</h4>
+                <p>The amount you pay for your health insurance every month.</p>
+            </div>
+            <div class="term">
+                <h4>Deductible</h4>
+                <p>The amount you pay for covered health care services before your insurance starts to pay.</p>
+            </div>
+            <div class="term">
+                <h4>Copayment (Copay)</h4>
+                <p>A fixed amount you pay for a covered health care service after you&#39;ve paid your deductible.</p>
+            </div>
+            <div class="term">
+                <h4>Out-of-Pocket Maximum</h4>
+                <p>The most you pay during a policy period (usually a year) before your insurance starts to cover 100% of covered services.</p>
+            </div>
+            <div class="term">
+                <h4>Coinsurance</h4>
+                <p>Your share of the costs of a covered health care service, calculated as a percentage of the allowed amount for the service.</p>
+            </div>
+            <div class="term">
+                <h4>Network</h4>
+                <p>The facilities, providers, and suppliers your health insurer has contracted with to provide health care services.</p>
+            </div>
+            <div class="term">
+                <h4>HMO (Health Maintenance Organization)</h4>
+                <p>A health insurance plan that typically limits coverage to care from doctors who work for or contract with the HMO.</p>
+            </div>
+            <div class="term">
+                <h4>PPO (Preferred Provider Organization)</h4>
+                <p>A health plan that offers more flexibility in choosing doctors and hospitals but may have higher costs.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+document.querySelectorAll('.term h4').forEach(item => {
+    item.addEventListener('click', () => {
+        const content = item.nextElementSibling;
+        content.style.display = content.style.display === 'none' || !content.style.display ? 'block' : 'none';
+    });
+});
+
+    </script>
+<div class="disclosure-section">
+    <h3 id="disclosure-header">Disclosure <span>&#x25BC;</span></h3>
+    <div class="disclosure-content">
+        <p>
+            The information provided is for <em><strong>educational purposes only</strong></em> and should not be considered financial, insurance, or legal advice. Consult a licensed professional for personalized advice.
+        </p>
+        <p>
+            <em><strong>Quotes Disclaimer:</strong></em> Quotes are examples only and may vary based on your provider, location, and policy. Final rates are determined upon application review.Quotes generated through this site are estimates only and do not guarantee coverage or specific rates. Actual rates and coverage options will be determined upon application review by the insurer.
+        </p>
+        <p>
+            <em><strong>Glossary:</strong></em>This glossary is not a substitute for reviewing your individual insurance policy or consulting with a licensed insurance agent. For specific questions or advice regarding your coverage or eligibility, please contact your insurance provider directly.
+        </p>
+        <p>
+            <em><strong>State-Specific Notice:</strong></em> Insurance regulations differ by state. Verify details with a licensed professional in your area.
+        </p>
+        <p>
+            By using this site, you agree the owner and affiliates are not responsible for errors, omissions, or discrepancies in the provided information.
+        </p>
+    </div>
+</div>
+<script>
+    const disclosureHeader = document.getElementById('disclosure-header');
+    const disclosureContent = document.querySelector('.disclosure-content');
+
+    disclosureHeader.addEventListener('click', () => {
+        disclosureContent.style.display = 
+            disclosureContent.style.display === 'block' ? 'none' : 'block';
+        disclosureHeader.parentElement.classList.toggle('open');
+    });
+</script>
+
+
+<footer>
+    <p>&copy; 2024 Hurstbourne Financial and Insurance LLC. All Rights Reserved.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    <div class="footer-bottom">
+        <div class="disclosures">
+            <p>Hurstbourne Insurance and Financial provides all insurance-related services. Hurstbourne Wealth Management, LLC is a state-registered investment advisor in the Commonwealth of Kentucky. The information on this site is for educational purposes only and does not constitute personalized investment, tax, or legal advice.</p>
+        </div>
+        <div class="social-media">
+            <a href="https://linkedin.com/in/curren-khadey" target="_blank">
+                <img src="icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="#">
+                <img src="icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="icons/twitter.svg" alt="Twitter">
+            </a>
+        </div>
+        <div class="important-links">
+            <a href="#">Business Continuity Plan</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Form ADV</a>
+            <a href="#">Form CRS</a>
+            <a href="#">Disclosures</a>
+
+        </div>
+    </div>
+</footer>    
+</body>
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore comprehensive 
+    dental insurance plans tailored to fit your needs. Learn
+     about coverage options and how we can assist in ensuring
+      your oral health is protected.">
+    <title>Dental Insurance Plans - Hurstbourne Insurance and Financial LLC</title>
+    <link href="styles.css" rel="stylesheet">  <!-- Link to the external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>        
+  
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-top: 100px;
+
+}
+
+
+.content {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.content p {
+    max-width: 800px;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+
+    /* Benefits Section */
+    .benefits {
+        padding: 40px 20px;
+        background: #f9fbfd;
+        text-align: center;
+    }
+    
+    .benefits h2 {
+        font-size: 2.5em;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+    
+    .benefits-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .benefit {
+        max-width: 300px;
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .benefit img {
+        max-width: 80px;
+        margin-bottom: 15px;
+    }
+    
+    .benefit h3 {
+        font-size: 1.5em;
+        color: #4682b4;
+        margin-bottom: 10px;
+    }
+    
+    .benefit p {
+        font-size: 1em;
+        color: #555;
+    }
+    
+  </style>
+  </head>
+  <hr>
+  <nav>
+      <div class="logo-container">
+          <a href="index.html">
+              <img src="just-logo-blue.png" alt="Hurstbourne Logo" class="logo-image">
+          </a>
+          <div class="logo-text">Hurstbourne Insurance and Financial LLC</div>
+      </div>
+      
+  
+      <div>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>
+                  <a href="#">Insurance</a>
+                  <ul>
+                      <li><a href="life-insurance.html">Life Insurance</a></li>
+                      <li><a href="health-insurance.html">Health Insurance</a></li>
+                      <li>
+                          <a href="medicare.html">Medicare</a>
+                          <ul>
+                              <li><a href="medigap.html">Medicare Supplement</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="disability.html">Disability</a></li>
+                      <li><a href="long-term-care.html">Long-Term Care</a></li>
+                      <li><a href="dental.html">Dental</a></li>
+                      <li><a href="vision.html">Vision</a></li>
+                      <li><a href="group.html">Business/Group</a></li>
+                      <li><a href="annuity.html">Annuity</a></li>
+  
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Hurstbourne Wealth Management LLC</a>
+                  <ul>
+                      <li><a href="investment.html">Investments</a></li>
+                      <li><a href="estate.html">Estate Planning</a></li>
+                      <li><a href="retirement.html">Retirement</a></li>
+                      <li><a href="education-savings-plans.html">Education Savings Plans</a></li>
+                      <li><a href="financial-plan.html">Comprehensive Financial Planning</a></li>
+                      <li><a href="advisor.html">Talk to a Financial Advisor</a></li>
+                  </ul>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+  </hr>
+
+  <section class="hero">
+    <h1>Comprehensive Dental Insurance Plans</h1>
+    <p>Protect your smile and your wallet with tailored dental insurance options. Let us help you find the perfect plan to meet your needs.</p>
+</section>
+<section class="content">
+    <h3>What We Offer</h3>
+    <p>At Hurstbourne Financial and Insurance LLC, we believe dental health is essential to overall well-being. Our comprehensive dental insurance plans are designed to provide coverage that fits your lifestyle and budget.</p>
+    
+    
+<div class="benefits">
+        <h2>Why Dental Insurance is Essential</h2>
+        <div class="benefits-container">
+            <div class="benefit">
+                <h3>Preventive Care</h3>
+                <p>Regular cleanings and exams at little to no cost to prevent major issues later.</p>
+            </div>
+            <div class="benefit">
+                <h3>Restorative Services</h3>
+                <p>Coverage for fillings, crowns, and other necessary treatments.</p>
+            </div>
+            <div class="benefit">
+                <h3>Family-Friendly Plans</h3>
+                <p>Plans designed for both individuals and families!</p>
+            </div>
+        </div>
+</div>
+</section>
+<section class="talk-to-an-advisor">
+    <h1>Ready to Protect That Smile?</h1>
+    <p>Let an expert provide you with the quality service you&#39;re expecting.</p>
+    <a href="#" id="openModal" style="display: inline-block; margin-top: 20px; background: #fff; color: #6394bc; padding: 15px 30px; font-weight: bold; text-decoration: none; border-radius: 5px;">Quote</a>
+</section>
+
+<!-- Modal for the Form -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>A Professional Will Quote You</h3>
+      <form id="contactForm" action="https://formsubmit.co/a3ed71673283b7f9df405b28ac6194cd" method="POST">
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" name="first_name" placeholder="Your First Name" required>
+              </div>
+              <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last_name" placeholder="Your Last Name" required>
+              </div>
+          </div>
+          
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+          </div>
+          
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="dob">Date of Birth</label>
+                  <input type="date" id="dob" name="dob" required>
+              </div>
+              <div class="form-group">
+                  <label for="tobacco">Do You Use Tobacco?</label>
+                  <select id="tobacco" name="tobacco" required>
+                      <option value="">Select</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                  </select>
+              </div>
+          </div>
+
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select id="gender" name="gender" required>
+                      <option value="">Select</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="zipcode">Zip Code</label>
+                  <input type="text" id="zipcode" name="zipcode" placeholder="Your Zip Code" required>
+              </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+                <label for="coverage-options">Select the type of coverage you&#39;re interested in:</label>
+                <select id="coverage-options">
+                    <option value="vision-only">Dental Insurance Only</option>
+                    <option value="vision-dental">Vision + Dental Insurance</option>
+                    <option value="vision-dental-medical">Vision + Dental + Medical Insurance</option>
+                    <option value="dental-only">Vision Insurance Only</option>
+                </select>
+        </div>
+    </div>
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+<style>
+/* Section Styling */
+        .talk-to-an-advisor {
+        background: linear-gradient(to right, #7ac5e3, #4682b4);
+        color: #fff;
+        text-align: center;
+        padding: 60px 20px;
+        margin-right: 300px;
+        margin-left: 300px;
+        border-radius: 8px;
+        }
+        .talk-to-an-advisor h1 {
+        margin-top: 5px;
+        font-size: 3em;
+        margin-bottom: 10px;
+        }
+        .talk-to-an-advisor p {
+        font-size: 1.2em;
+        margin-top: 10px;
+        }
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    position: relative;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content .form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.modal-content .form-group {
+    flex: 1;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #6394bc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #507fa3;
+}
+</style>
+<script>// Get elements
+  const openModalButton = document.getElementById('openModal');
+  const modal = document.getElementById('formModal');
+  const closeModalButton = document.querySelector('.modal .close');
+  
+  // Open modal on button click
+  openModalButton.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent link navigation
+      modal.style.display = 'flex'; // Show modal
+  });
+  
+  // Close modal on close button click
+  closeModalButton.addEventListener('click', () => {
+      modal.style.display = 'none'; // Hide modal
+  });
+  
+  // Close modal on clicking outside the modal content
+  window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
+  </script>
+            <section class="misconceptions">
+                <h3>Your Guide to Dental Insurance</h3>
+                <p>Discover how dental insurance can help you maintain your smile and protect your health and finances.</p>
+
+                <div class="flashcards">
+                    <div class="flashcard">
+                        <div class="front">
+                            <p>What is preventive care?</p>
+                            <button onclick="flipCard(this)">Flip</button>
+                        </div>
+                        <div class="back">
+                            <p>Preventive care includes regular checkups, cleanings, and exams to maintain your dental health.</p>
+                            <button onclick="flipCard(this)">Flip Back</button>
+                        </div>
+                    </div>
+            
+                    <div class="flashcard">
+                        <div class="front">
+                            <p>What is covered?</p>
+                            <button onclick="flipCard(this)">Flip</button>
+                        </div>
+                        <div class="back">
+                            <ul>
+                                <li>Preventive care like exams, cleanings, and X-rays.</li>
+                                <li>Basic procedures like fillings and extractions.</li>
+                                <li>Major services like crowns and root canals.</li>
+                            </ul>
+                            <button onclick="flipCard(this)">Flip Back</button>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="flashcard">
+                        <div class="front">
+                            <p>What is a "dental discount plan"?</p>
+                            <button onclick="flipCard(this)">Flip</button>
+                        </div>
+                        <div class="back">
+                            <p>                <ul>
+                                <li>Not actual insurance.</li>
+                                <li>You pay the full cost of care.</li>
+                                <li>Limited choice of dentists.</li>
+                                <li>No out-of-network benefits.</li>
+                            </ul></p>
+                            <button onclick="flipCard(this)">Flip Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flashcards">
+                    <div class="flashcard">
+                        <div class="front">
+                            <p>Benefit of Preventive Care</p>
+                            <button onclick="flipCard(this)">Flip</button>
+                        </div>
+                        <div class="back">
+                            <p>Regular checkups are easier and less expensive than tooth restoration. Stop the problem before it begins.</p>
+                            <button onclick="flipCard(this)">Flip Back</button>
+                        </div>
+                    </div>
+            
+                    <div class="flashcard">
+                        <div class="front">
+                            <p>"How do I start?"</p>
+                            <button onclick="flipCard(this)">Flip</button>
+                        </div>
+                        <div class="back">
+                            <p>Insurance can be complicated, but our dedicated team of professionals is here to help you every step of the way. Click <a href = "contact.html">Here</a></p>
+                            <button onclick="flipCard(this)">Flip Back</button>
+                        </div>
+                    </div>
+            
+                    <div class="flashcard">
+                        <div class="front">
+                            <p>"I&#39;m busy, how long does it take get coverage?"</p>
+                            <button onclick="flipCard(this)">Flip</button>
+                        </div>
+                        <div class="back">
+                            <p>Once your request reaches a representative, 
+                                the process takes minutes 
+                                to initiate. Simply click the "quote" 
+                                button above or start <a href="contact.html">here</a>.</p>
+                            
+                            <button onclick="flipCard(this)">Flip Back</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <script>
+        
+                function flipCard(button) {
+                const card = button.closest('.flashcard');
+                card.classList.toggle('flipped');
+            }
+            </script>
+
+            <style>        
+            .misconceptions {
+                max-width: 1200px;
+                margin: 40px auto;
+                padding: 40px;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 300px;
+            }
+            .misconceptions h3{
+                margin-bottom: 50px;
+            }
+            .flashcards {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+            .flashcard {
+                perspective: 1000px;
+                width: 300px;
+                height: 200px;
+                position: relative;
+            }
+        
+            .flashcard .front,
+            .flashcard .back {
+                width: 90%;
+                height: 90%;
+                position: absolute;
+                backface-visibility: hidden;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                background: #f5f5f5;
+                transition: transform 0.6s;
+            }
+        
+            .flashcard .front {
+                z-index: 2;
+            }
+        
+            .flashcard .back {
+                transform: rotateY(180deg);
+            }
+        
+            .flashcard.flipped .front {
+                transform: rotateY(180deg);
+            }
+        
+            .flashcard.flipped .back {
+                transform: rotateY(0);
+            }
+        
+            .flashcard button {
+                margin-top: 10px;
+                padding: 8px 12px;
+                background: #4ca1af;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+        
+            .flashcard button:hover {
+                background: #357a87;
+            }
+            </style>
+
+      <footer>
+        <p>&copy; 2024 Hurstbourne Financial and Insurance LLC. All Rights Reserved. <a href="contacts.html">Contact Us</a> for more information.</p>
+        <div class="footer-bottom">
+            <div class="disclosures">
+                <p>Hurstbourne Insurance and Financial provides all insurance-related services. Hurstbourne Wealth Management, LLC is a state-registered investment advisor in the Commonwealth of Kentucky. The information on this site is for educational purposes only and does not constitute personalized investment, tax, or legal advice.</p>
+            </div>
+            <div class="social-media">
+                <a href="https://linkedin.com/in/curren-khadey" target="_blank">
+                    <img src="icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="#">
+                    <img src="icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="icons/twitter.svg" alt="Twitter">
+                </a>
+            </div>
+            <div class="important-links">
+                <a href="#">Business Continuity Plan</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Form ADV</a>
+                <a href="#">Form CRS</a>
+                <a href="#">Disclosures</a>
+
+            </div>
+        </div>
+    </footer>        
+</body>
+</html>

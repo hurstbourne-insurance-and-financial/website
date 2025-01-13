@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hurstbourne Insurance and Financial LLC - 
+  Providing strategic life insurance and financial solutions to secure your future.">
+<meta property="og:title" content="Hurstbourne Insurance and Financial LLC">
+ <!-- Chat gpt provided the next four lines bc it said that "these Meta tags for SEO and Social Sharing
+  Chat also said to replace <div> "tags with semantic elements like <section>, <article>, and <footer>. 
+    This will improve accessibility and readability for both users and search engines." -->
+<meta property="og:description" content="Providing strategic life insurance and financial solutions to secure your future.">
+<meta property="og:image" content="path/to/image.jpg">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta name="twitter:card" content="summary_large_image">
+
+  <title>About Us - Hurstbourne Insurance and Financial LLC</title>
+  <link href="styles.css" rel="stylesheet">  <!-- Link to the external CSS file -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+    /* Popup styling */
+    .contact-form-popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .contact-form-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+    }
+    
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .form-row {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .form-group {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    
+    textarea {
+      resize: none;
+    }
+    
+    button {
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    </style>
+    
+</head>
+<body>
+  <hr>
+  <nav>
+      <div class="logo-container">
+          <a href="index.html">
+              <img src="just-logo-blue.png" alt="Hurstbourne Logo" class="logo-image">
+          </a>
+          <div class="logo-text">Hurstbourne Insurance and Financial LLC</div>
+      </div>
+      
+  
+      <div>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>
+                  <a href="#">Insurance</a>
+                  <ul>
+                      <li><a href="life-insurance.html">Life Insurance</a></li>
+                      <li><a href="health-insurance.html">Health Insurance</a></li>
+                      <li>
+                          <a href="medicare.html">Medicare</a>
+                          <ul>
+                              <li><a href="medigap.html">Medicare Supplement</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="disability.html">Disability</a></li>
+                      <li><a href="long-term-care.html">Long-Term Care</a></li>
+                      <li><a href="dental.html">Dental</a></li>
+                      <li><a href="vision.html">Vision</a></li>
+                      <li><a href="group.html">Business/Group</a></li>
+                      <li><a href="annuity.html">Annuity</a></li>
+  
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Hurstbourne Wealth Management LLC</a>
+                  <ul>
+                      <li><a href="investment.html">Investments</a></li>
+                      <li><a href="estate.html">Estate Planning</a></li>
+                      <li><a href="retirement.html">Retirement</a></li>
+                      <li><a href="education-savings-plans.html">Education Savings Plans</a></li>
+                      <li><a href="financial-plan.html">Comprehensive Financial Planning</a></li>
+                      <li><a href="advisor.html">Talk to a Financial Advisor</a></li>
+                  </ul>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+  </hr>
+  <header>About Us</header>
+
+  <div class="container">
+    <div class="intro">
+      <h2>Welcome to Hurstbourne Insurance and Financial LLC</h2>
+      <p>Providing you with strategic life insurance and financial solutions to secure your future.</p>
+    </div>
+
+    <h2>Our Values</h2>
+    <div class="values">
+      <div class="value-card">
+        <h3>Integrity</h3>
+        <p>We uphold honesty and transparency in every client interaction.</p>
+      </div>
+      <div class="value-card">
+        <h3>Expertise</h3>
+        <p>Offering experienced guidance in insurance and financial planning.</p>
+      </div>
+      <div class="value-card">
+        <h3>Client Focus</h3>
+        <p>Your needs shape our approach to financial solutions.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <button id="getInTouchButton">Get in Touch</button>
+    </div>
+  </div>
+
+    <div class="contact-form-popup" id="contactFormPopup">
+      <div class="contact-form-content">
+        <span class="close-button" id="closeButton">&times;</span>
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" action="https://formsubmit.co/a3ed71673283b7f9df405b28ac6194cd" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Your First Name" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Your Last Name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="zipcode">Zip Code</label>
+              <input type="text" id="zipcode" name="zipcode" placeholder="Your Zip Code" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message (optional)"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    
+
+    <script>
+      // JavaScript for popup functionality
+      document.getElementById('getInTouchButton').addEventListener('click', function() {
+        document.getElementById('contactFormPopup').style.display = 'flex';
+      });
+    
+      document.getElementById('closeButton').addEventListener('click', function() {
+        document.getElementById('contactFormPopup').style.display = 'none';
+      });
+    
+      // Close popup if user clicks outside of the form
+      document.getElementById('contactFormPopup').addEventListener('click', function(event) {
+        if (event.target === this) {
+          this.style.display = 'none';
+        }
+      });
+    </script>
+    
+  
+    <footer>
+      <p>&copy; 2024 Hurstbourne Financial and Insurance LLC. All Rights Reserved. <a href="contact.html">Contact Us</a> for more information.</p>
+      <div class="footer-bottom">
+          <div class="disclosures">
+              <p>Hurstbourne Insurance and Financial LLC provides all insurance-related services. Hurstbourne Wealth Management, LLC is a state-registered investment advisor in the Commonwealth of Kentucky. The information on this site is for educational purposes only and does not constitute personalized investment, tax, or legal advice.</p>
+          </div>
+          <div class="social-media">
+              <a href="https://linkedin.com/in/curren-khadey" target="_blank">
+                  <img src="icons/linkedin.svg" alt="LinkedIn">
+              </a>
+          </div>
+          <div class="important-links">
+              <a href="#">Business Continuity Plan</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Form ADV</a>
+              <a href="#">Form CRS</a>
+              <a href="#">Disclosures</a>
+
+          </div>
+      </div>
+  </footer>  
+
+</body>
+</html>

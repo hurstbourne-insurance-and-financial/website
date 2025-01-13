@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about vision insurance options at Hurstbourne Insurance and Financial LLC. Explore tailored plans and request a personalized quote.">
+    <title>Vision Insurance | Hurstbourne Insurance and Financial LLC</title>
+    <link href="styles.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(135deg, #283c63, #6394bc);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .interactive-options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .interactive-options label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .interactive-options select {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .quote-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        .quote-popup h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .quote-popup form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quote-popup form label {
+            margin-bottom: 5px;
+        }
+
+        .quote-popup form input, .quote-popup form select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .quote-popup form button {
+            padding: 10px;
+            background-color: #6394bc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .quote-popup form button:hover {
+            background-color: #1f5a83;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+
+
+
+        /* Why Vision Insurance Matters */
+.why-vision {
+    padding: 40px 20px;
+    background: #f9fbfd;
+    text-align: center;
+}
+
+.why-vision h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.benefits-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.benefit h3 {
+    font-size: 1.5em;
+    color: #1f5a83;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* FAQs Section */
+.vision-faqs {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.vision-faqs h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    font-size: 1.5em;
+    color: #1f5a83;
+    margin-bottom: 5px;
+}
+
+.faq p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+
+/* Call-to-Action Banner */
+.cta-banner {
+    background: linear-gradient(to right, #6394bc, #1f5a83);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 300px;
+}
+
+.cta-banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.cta-banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #fff;
+    color: #1f5a83;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background: #1f5a83;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <hr>
+    <nav>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="just-logo-blue.png" alt="Hurstbourne Logo" class="logo-image">
+            </a>
+            <div class="logo-text">Hurstbourne Insurance and Financial LLC</div>
+        </div>
+        
+    
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Insurance</a>
+                    <ul>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li>
+                            <a href="medicare.html">Medicare</a>
+                            <ul>
+                                <li><a href="medigap.html">Medicare Supplement</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="disability.html">Disability</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="dental.html">Dental</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="group.html">Business/Group</a></li>
+                        <li><a href="annuity.html">Annuity</a></li>
+    
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hurstbourne Wealth Management LLC</a>
+                    <ul>
+                        <li><a href="investment.html">Investments</a></li>
+                        <li><a href="estate.html">Estate Planning</a></li>
+                        <li><a href="retirement.html">Retirement</a></li>
+                        <li><a href="education-savings-plans.html">Education Savings Plans</a></li>
+                        <li><a href="financial-plan.html">Comprehensive Financial Planning</a></li>
+                        <li><a href="advisor.html">Talk to a Financial Advisor</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </hr>
+    <section class="hero">
+        <h1>Vision Insurance That Fits Your Needs</h1>
+        <p>Explore comprehensive options for vision care and more at Hurstbourne Insurance and Financial LLC.</p>
+    </section>
+
+    <div class="section">
+        <h2>Learn About Your Vision Insurance Options</h2>
+        <p>Vision insurance provides coverage for routine eye exams, eyewear, and other vision-related services. Whether you need standalone vision coverage or a package including dental and medical insurance, we have plans tailored to your needs.</p>
+    </div>
+
+    <section class="talk-to-an-advisor">
+        <h1>Your Vision Deserves Clarity</h1>
+        <p>Let an expert provide you with the quality service you&#39;re expecting.</p>
+        <a href="#" id="openModal" style="display: inline-block; margin-top: 20px; background: #fff; color: #6394bc; padding: 15px 30px; font-weight: bold; text-decoration: none; border-radius: 5px;">Quote</a>
+    </section>
+    
+    <!-- Modal for the Form -->
+    <div id="formModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>A Professional Will Quote You</h3>
+          <form id="contactForm" action="https://formsubmit.co/a3ed71673283b7f9df405b28ac6194cd" method="POST">
+              <div class="form-row">
+                  <div class="form-group">
+                      <label for="first-name">First Name</label>
+                      <input type="text" id="first-name" name="first_name" placeholder="Your First Name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" id="last-name" name="last_name" placeholder="Your Last Name" required>
+                  </div>
+              </div>
+              
+              <div class="form-row">
+                  <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Your Email" required>
+                  </div>
+              </div>
+              
+              <div class="form-row">
+                  <div class="form-group">
+                      <label for="dob">Date of Birth</label>
+                      <input type="date" id="dob" name="dob" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="tobacco">Do You Use Tobacco?</label>
+                      <select id="tobacco" name="tobacco" required>
+                          <option value="">Select</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                      </select>
+                  </div>
+              </div>
+    
+              <div class="form-row">
+                  <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select id="gender" name="gender" required>
+                          <option value="">Select</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="zipcode">Zip Code</label>
+                      <input type="text" id="zipcode" name="zipcode" placeholder="Your Zip Code" required>
+                  </div>
+              </div>
+    
+              <div class="form-row">
+                <div class="form-group">
+                    <label for="coverage-options">Select the type of coverage you&#39;re interested in:</label>
+                    <select id="coverage-options">
+                        <option value="vision-only">Vision Insurance Only</option>
+                        <option value="vision-dental">Vision + Dental Insurance</option>
+                        <option value="vision-dental-medical">Vision + Dental + Medical Insurance</option>
+                        <option value="dental-only">Dental Insurance Only</option>
+                    </select>
+            </div>
+        </div>
+              <button type="submit">Submit</button>
+          </form>
+      </div>
+    </div>
+    <style>
+    /* Section Styling */
+            .talk-to-an-advisor {
+            background: linear-gradient(to right, #7ac5e3, #4682b4);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            margin-right: 300px;
+            margin-left: 300px;
+            border-radius: 8px;
+            }
+            .talk-to-an-advisor h1 {
+            margin-top: 5px;
+            font-size: 3em;
+            margin-bottom: 10px;
+            }
+            .talk-to-an-advisor p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            }
+    
+    /* Modal Styling */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal-content {
+        background-color: #fff;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
+        text-align: left;
+        position: relative;
+    }
+    
+    .modal-content h3 {
+        margin-top: 0;
+    }
+    
+    .modal-content .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: #aaa;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .modal-content .form-row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .modal-content .form-group {
+        flex: 1;
+    }
+    
+    .modal-content label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .modal-content input,
+    .modal-content select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .modal-content button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #6394bc;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .modal-content button:hover {
+        background-color: #507fa3;
+    }
+    </style>
+    <script>// Get elements
+      const openModalButton = document.getElementById('openModal');
+      const modal = document.getElementById('formModal');
+      const closeModalButton = document.querySelector('.modal .close');
+      
+      // Open modal on button click
+      openModalButton.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent link navigation
+          modal.style.display = 'flex'; // Show modal
+      });
+      
+      // Close modal on close button click
+      closeModalButton.addEventListener('click', () => {
+          modal.style.display = 'none'; // Hide modal
+      });
+      
+      // Close modal on clicking outside the modal content
+      window.addEventListener('click', (e) => {
+          if (e.target === modal) {
+              modal.style.display = 'none';
+          }
+      });
+      </script>
+
+    <div class="why-vision">
+        <h2>Why Vision Insurance Matters</h2>
+        <div class="benefits-container">
+            <div class="benefit">
+                <h3>Regular Eye Exams</h3>
+                <p>Detect vision issues early and maintain long-term eye health with affordable check-ups.</p>
+            </div>
+            <div class="benefit">
+                <h3>Glasses & Contacts</h3>
+                <p>Save on prescription eyewear, including designer frames and specialty lenses.</p>
+            </div>
+            <div class="benefit">
+                <h3>Family Coverage</h3>
+                <p>Protect your entire family's vision with plans that fit any budget.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="vision-faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h3>What does vision insurance cover?</h3>
+            <p>Most plans cover eye exams, prescription lenses, contact lenses, and discounts on frames.</p>
+        </div>
+        <div class="faq">
+            <h3>Is vision insurance worth it?</h3>
+            <p>If you wear glasses or contacts, vision insurance can save you hundreds of dollars annually.</p>
+        </div>
+        <div class="faq">
+            <h3>How do I choose the right plan?</h3>
+            <p>We can help you compare options to find a plan that fits your needs and budget.</p>
+        </div>
+    </div>
+    
+
+
+    <div class="cta-banner">
+        <h2>Ready to find the perfect plan?</h2>
+        <p>Let an expert guide you through the process and ensure your eyes get the care they need.</p>
+        <a href="contact.html" class="cta-button">Get Started Today</a>
+    </div>
+    
+
+    <style>
+        /* Disclosures styling*/
+.disclosure-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.65em;
+    font-style: italic;
+    color: #555;
+    cursor: pointer;
+}
+
+.disclosure-section h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.disclosure-section h3 span {
+    font-size: 1.2em;
+    transition: transform 0.2s;
+}
+
+.disclosure-content {
+    display: none;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.disclosure-content p {
+    margin: 5px 0;
+}
+
+.disclosure-section.open h3 span {
+    transform: rotate(180deg);
+}
+
+
+    </style>
+<div class="disclosure-section">
+    <h3 id="disclosure-header">Disclosures<span>&#x25BC;</span></h3>
+    <div class="disclosure-content">
+        <p> <em>
+            The content on this website is for informational purposes only and should not be considered as legal, financial, or insurance advice. For personalized recommendations, please consult a licensed professional.
+            The information provided on this page is for educational purposes only and is not a guarantee of coverage or benefits. Coverage and benefits vary depending on the specific policy and provider. For more information about available plans, please contact us directly.
+            Insurance quotes displayed on this site are for illustrative purposes only. Actual premiums, terms, and coverage amounts will vary based on the underwriting process and provider terms.
+            This site is operated by a licensed life and health insurance agent authorized to conduct business in Kentucky. Services and products may not be available in all states.
+            Submitting an application or receiving a quote does not guarantee approval for coverage. Approval is subject to the insurer&#39;s underwriting guidelines.
+            Insurance policies are regulated by state law and subject to the terms and conditions of the issuing insurer. Please consult a licensed agent in your state for specific details.
+            This site may contain links to third-party websites or services. We are not responsible for the accuracy or practices of these providers. Always verify terms directly with the provider.
+            This is a solicitation for insurance. By submitting your information, you consent to be contacted by a licensed insurance agent.
+            For personalized advice or quotes, please contact us directly. Policy specifics, including costs and eligibility, will be provided upon request after consultation.
+            Personal information provided on this site will be used to provide quotes and services as requested. Please review our Privacy Policy for details.
+            This page is designed to be accessible to all users. If you encounter any difficulties accessing the content, please contact us at <a href="mailto:contact@hurstbournewealthmanagement.com">contact@hurstbournewealthmanagement.com</a>.
+            Any references to an insurer&#39;s financial strength are based on publicly available ratings and are not a guarantee of future performance.
+            Vision insurance plans and coverage options may vary by location and may not be available in all states. Please contact us for availability in your area.
+            Hurstbourne Insurance and Financial LLC may receive compensation from insurance providers for policies sold. This does not influence the recommendations provided to you.
+            While we strive to provide accurate information, we are not responsible for errors, omissions, or inaccuracies. Use the information at your own risk.
+            Links to other insurance options on this website are provided for your convenience. These pages may have their own terms, conditions, and disclosures.
+            All policies are subject to the terms, conditions, and exclusions specified by the issuing insurer. Refer to your policy documents for full details.
+        </em></p>
+    </div>
+</div>
+<script>
+    const disclosureHeader = document.getElementById('disclosure-header');
+    const disclosureContent = document.querySelector('.disclosure-content');
+
+    disclosureHeader.addEventListener('click', () => {
+        disclosureContent.style.display = 
+            disclosureContent.style.display === 'block' ? 'none' : 'block';
+        disclosureHeader.parentElement.classList.toggle('open');
+    });
+</script>
+
+
+<footer>
+    <p>&copy; 2024 Hurstbourne Financial and Insurance LLC. All Rights Reserved. <a href="contacts.html">Contact Us</a> for more information.</p>
+    <div class="footer-bottom">
+        <div class="disclosures">
+            <p>Hurstbourne Insurance and Financial provides all insurance-related services. Hurstbourne Wealth Management, LLC is a state-registered investment advisor in the Commonwealth of Kentucky. The information on this site is for educational purposes only and does not constitute personalized investment, tax, or legal advice.</p>
+        </div>
+        <div class="social-media">
+            <a href="https://linkedin.com/in/curren-khadey" target="_blank">
+                <img src="icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="#">
+                <img src="icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="icons/twitter.svg" alt="Twitter">
+            </a>
+        </div>
+        <div class="important-links">
+            <a href="#">Business Continuity Plan</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Form ADV</a>
+            <a href="#">Form CRS</a>
+            <a href="#">Disclosures</a>
+
+        </div>
+    </div>
+</footer>   
+</body>
+</html>

@@ -1,0 +1,458 @@
+
+@media (max-width: 768px) {
+    .content {
+        padding: 30px 10px;
+    }
+
+    .cta {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #004080, #00264d);
+    padding: 2em 1em;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 140px; /* Adjust for fixed nav bar */
+  }
+  /* Logo and text container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em; /* Space between logo/text and links */
+  
+}
+
+/* Logo image */
+.logo-image {
+  max-height: 140px; /* Adjust logo size */
+margin-left: -200px;
+}
+
+/* Logo text */
+.logo-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+  /* Navigation Bar */
+  nav {
+    background: #00264d;
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; /* Stack logo and links vertically */
+    align-items: center;    /* Center the content horizontally */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+                    /* All of the below is from nav-bar on test-site */          
+                    nav ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                    }
+
+                    nav ul li {
+                        position: relative; /* Needed for dropdown positioning */
+                        margin-right: 1em;
+                    }
+
+                    nav ul li a {
+                        color: white;
+                        text-decoration: none;
+                        padding: 0.5em;
+                        display: block;
+                    }
+
+                    /* Dropdown menu styling */
+                    nav ul li ul {
+                        display: none; /* Hidden by default */
+                        position: absolute;
+                        top: 100%; /* Aligns dropdown below the parent item */
+                        left: 0;
+                        background-color: #00264d;
+                        padding: 0.5em 0;
+                        min-width: 200px;
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                    }
+                
+                    nav ul li ul li {
+                        margin: 0; /* Removes margin for dropdown items */
+                    }
+                
+                    nav ul li:hover > ul {
+                        display: block; /* Show dropdown when parent is hovered */
+                    }
+                
+                    /* Sub-subsection dropdown styling */
+                    nav ul li ul li ul {
+                        left: 100%; /* Position sub-subsection to the right */
+                        top: 0;
+                    }
+                
+                    /* Dropdown indicators (small triangles) */
+                    nav ul li a::after {
+                        content: " \25BE"; /* Unicode for a downward triangle */
+                        font-size: 0.7em;
+                        margin-left: 0.3em;
+                    }
+                
+                    nav ul li ul li a::after {
+                        content: " \25B8"; /* Unicode for a right-pointing triangle */
+                    }
+
+
+
+
+nav div {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    align-items: center;
+  }
+  
+
+
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #00c3ff;
+  }
+  nav a:focus,
+    .cta button:focus {
+    outline: 2px dashed #00c3ff;
+    outline-offset: 4px;
+    }
+
+  
+  .container {
+    padding: 3em 2em;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .intro {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  .content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 0 auto 40px;
+}
+
+
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+
+  .hero {
+    margin-top: 120px; /* Adjust for fixed nav bar */
+    background-color: rgba(43, 106, 150, 0.7);
+    color: #fff;
+    padding: 60px ;
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    border-radius: 10px; /* Optional: Adds rounded corners for a modern look */
+
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    font-weight: bold
+    
+
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin: 0 0 15px;
+    animation: fadeInUp 1s ease-in-out;
+
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: auto;
+    animation: fadeInUp 1s ease-in-out;
+
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+  
+  /* Our Values Section */
+  .values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 3em;
+  }
+  
+  .value-card {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .value-card h3 {
+    color: #004080;
+    margin-bottom: 1em;
+  }
+  
+  /* Call to Action */
+  .cta {
+    text-align: center;
+    margin-top: 4em;
+  }
+  
+  .cta button {
+    background-color: #004080;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .cta button:hover {
+    background-color: #00264d;
+  }
+  
+  /* Dark Mode Toggle */
+  .dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #004080;
+    color: white;
+    padding: 0.7em 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    z-index: 10;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  body.dark nav, body.dark header {
+    background: #00264d;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #00264d;
+  }
+
+  body.dark .value-card {
+    background-color: #222;
+    color: #fff;
+  }
+  body.dark .card{
+    background-color: #222;
+    color: #fff;
+  }
+
+  body.dark .stat{
+    background-color: #222;
+    color: #fff;
+  }
+
+body.dark .faq-content {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark .flashcard-front {
+    background-color: #222;
+    color: #fff;
+}
+
+  footer {
+    background-color: #00264d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffde59;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-right: 0;
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 600px;
+    margin: 2em auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .contact-form button {
+    background-color: #004080;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .contact-form button:hover {
+    background-color: #00264d;
+  }
+  
