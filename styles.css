@@ -153,6 +153,59 @@ nav div {
     outline-offset: 4px;
     }
 
+    @media (max-width: 768px) {
+      body {
+          padding-top: 160px; /* Adjust for fixed nav on smaller screens */
+      }
+  
+      header {
+          font-size: 2.5em; /* Adjust header size for smaller screens */
+          padding: 1.5em 1em; /* Reduce padding for header */
+      }
+  
+      /* Adjust logo and text container */
+      .logo-container {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .logo-image {
+          max-height: 100px; /* Resize logo for smaller screens */
+          margin-left: 0;
+      }
+  
+      .logo-text {
+          font-size: 2.5em; /* Adjust text size */
+      }
+  
+      nav ul {
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+      }
+  
+      nav ul li {
+          margin-right: 0;
+          margin-bottom: 0.5em;
+      }
+  
+      nav a {
+          margin: 0.5em 0; /* Vertical spacing for smaller screens */
+      }
+  
+      /* Mobile dropdown adjustments */
+      nav ul li ul {
+          position: static;
+          box-shadow: none;
+          padding: 1em 0;
+          min-width: 100%; /* Make dropdown full width */
+      }
+  
+      nav ul li ul li a {
+          padding: 1em; /* Increase padding for touch screens */
+      }
+  }
+  
   
   .container {
     padding: 3em 2em;
@@ -190,7 +243,29 @@ nav div {
       transform: translateY(0);
     }
   }
+
   
+  /*Mobile responsiveness for above sections*/
+  @media (max-width: 768px) {
+    .container {
+        padding: 2em 1em; /* Adjust padding */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Adjust font size */
+    }
+
+    p {
+        font-size: 1em; /* Adjust font size */
+        margin-bottom: 1.5em; /* Reduce bottom margin */
+    }
+
+    .intro {
+        opacity: 1; /* Ensure intro section shows on smaller screens */
+        transform: translateY(0); /* Ensure it doesn't get cut off */
+        animation: fadeInUp 1s forwards; /* Keep fade-in effect */
+    }
+}
 
 
   .content {
@@ -336,7 +411,73 @@ section p {
   .cta button:hover {
     background-color: #00264d;
   }
-  
+
+
+
+/*Mobile responsiveness for above sections*/
+@media (max-width: 768px) {
+  .content {
+      padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .content h3 {
+      font-size: 1.8em; /* Adjust font size for smaller screens */
+  }
+
+  .content p {
+      font-size: 1em; /* Adjust font size */
+      max-width: 90%; /* Allow text to take more space */
+  }
+
+  section {
+      padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  section h3 {
+      font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  section p {
+      font-size: 1em; /* Adjust font size */
+  }
+
+  .hero {
+      margin-top: 80px; /* Adjust for fixed nav bar */
+      padding: 40px 20px; /* Adjust padding */
+      margin-right: 20px; /* Reduce margins */
+      margin-left: 20px;
+  }
+
+  .hero h1 {
+      font-size: 2.2em; /* Adjust font size */
+  }
+
+  .hero h2 {
+      font-size: 1.8em; /* Adjust font size */
+  }
+
+  .hero p {
+      font-size: 1.1em; /* Adjust font size */
+  }
+
+  .values {
+      flex-direction: column; /* Stack value cards vertically */
+      gap: 1.5em;
+  }
+
+  .value-card {
+      width: 90%; /* Allow value cards to take more space */
+      padding: 1.5em;
+  }
+
+  .cta button {
+      font-size: 0.9em; /* Adjust button font size */
+      padding: 0.8em 1.5em; /* Adjust padding */
+  }
+}
+
+
+
   /* Dark Mode Toggle */
   .dark-mode-toggle {
     position: fixed;
@@ -408,16 +549,6 @@ footer a:hover {
 
 
 
-@media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav ul li {
-      margin-right: 0;
-    }
-  }
   
   html {
     scroll-behavior: smooth;
@@ -456,3 +587,25 @@ footer a:hover {
     background-color: #00264d;
   }
   
+  @media (max-width: 768px) {
+    footer {
+        padding: 1em;
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .contact-form {
+        margin: 1.5em auto; /* Reduce margin for smaller screens */
+        max-width: 90%; /* Allow the contact form to be more fluid */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9em; /* Slightly smaller font size for smaller screens */
+        padding: 0.8em; /* Slightly smaller padding for smaller screens */
+    }
+
+    .contact-form button {
+        font-size: 0.9em; /* Adjust button font size */
+        padding: 0.8em; /* Adjust button padding */
+    }
+}
