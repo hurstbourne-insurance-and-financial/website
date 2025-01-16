@@ -9,26 +9,8 @@
     <style>
         .hero {
             background: linear-gradient(135deg, #283c63, #6394bc);
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
         }
 
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            margin-top: 60px;
-        }
-
-        .hero h2 {
-            font-size: 1.5em;
-            font-weight: 400;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
 
         .container {
             padding: 20px 10%;
@@ -222,11 +204,11 @@
 <body>
     <section class="hero">
         <h1>Annuity</h1>
-            <p><em>
+            <h2>
                 Your comprehensive guide to understanding
                 and leveraging annuities for your financial
                 goals.
-            </em></p>
+            </h2>
     </section>
     <style>
         .content {
@@ -312,7 +294,6 @@
         <div class="cta">
             <a href="#" id="request-quote">Request a Quote</a>
         </div>
-    </div>
 
     <div class="popup-overlay" id="popup-overlay"></div>
     <div class="popup" id="popup">
@@ -424,51 +405,7 @@
 
 
 
-    <style>
-        /* Disclosures styling*/
-    .disclosure-section {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-top: 200px;
-    padding: 10px;
-    font-size: 0.65em;
-    font-style: italic;
-    color: #555;
-    cursor: pointer;
-    }
-    
-    .disclosure-section h3 {
-    font-size: 1.2em;
-    margin: 0;
-    color: #2c3e50;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
-    }
-    
-    .disclosure-section h3 span {
-    font-size: 1.2em;
-    transition: transform 0.2s;
-    }
-    
-    .disclosure-content {
-    display: none;
-    margin-top: 10px;
-    line-height: 1.6;
-    }
-    
-    .disclosure-content p {
-    margin: 5px 0;
-    }
-    
-    .disclosure-section.open h3 span {
-    transform: rotate(180deg);
-    }
-    
-    
-    </style>
+ 
     <div class="disclosure-section">
     <h3 id="disclosure-header">Disclosures<span>&#x25BC;</span></h3>
     <div class="disclosure-content">
@@ -484,16 +421,7 @@
         </em> </p>
     </div>
     </div>
-    <script>
-    const disclosureHeader = document.getElementById('disclosure-header');
-    const disclosureContent = document.querySelector('.disclosure-content');
-    
-    disclosureHeader.addEventListener('click', () => {
-        disclosureContent.style.display = 
-            disclosureContent.style.display === 'block' ? 'none' : 'block';
-        disclosureHeader.parentElement.classList.toggle('open');
-    });
-    </script>
+
     
 <footer>
     <p>&copy; 2024 Hurstbourne Financial and Insurance LLC. All Rights Reserved. <a href="contacts.html">Contact Us</a> for more information.</p>

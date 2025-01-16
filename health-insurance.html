@@ -8,32 +8,7 @@
     <link href="styles.css" rel="stylesheet" media="all">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .hero {
-            background: linear-gradient(135deg, #283c63, #6394bc);
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
-        }
 
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            margin-top: 80px;
-        }
-
-
-        .hero p {
-            font-size: 1.4em;
-            margin-top: 10px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        }
 
         .section {
             max-width: 1200px;
@@ -95,7 +70,7 @@
 
         .cta {
             text-align: center;
-            background: #2c3e50;
+            background: #335f8a;
             color: #fff;
             padding: 40px 20px;
             border-radius: 8px;
@@ -276,8 +251,8 @@
     </hr>
     <section class="hero">
         <h1>Health Insurance Made Simple</h1>
-        <p><em>Protect yourself and your family with tailored health insurance solutions.</p>
-        </em></section>
+        <h2>Protect yourself and your family with tailored health insurance solutions.</h2>
+    </section>
 
         <div class="section">
             <h2>Our Health Insurance Plans</h2>
@@ -544,16 +519,7 @@ document.querySelectorAll('.term h4').forEach(item => {
         </p>
     </div>
 </div>
-<script>
-    const disclosureHeader = document.getElementById('disclosure-header');
-    const disclosureContent = document.querySelector('.disclosure-content');
 
-    disclosureHeader.addEventListener('click', () => {
-        disclosureContent.style.display = 
-            disclosureContent.style.display === 'block' ? 'none' : 'block';
-        disclosureHeader.parentElement.classList.toggle('open');
-    });
-</script>
 <script src="scripts.js"></script> <!-- Link to the external JS file -->
 
 

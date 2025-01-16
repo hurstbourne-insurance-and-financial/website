@@ -1,77 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Long-Term Care and why it's essential for securing your future. Discover expert insights from Hurstbourne Financial and Insurance LLC.">
-    <title>Long-Term Care - Hurstbourne Financial and Insurance LLC</title>
-    <link href="styles.css" rel="stylesheet">  <!-- Link to the external CSS file -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        .faq {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: left;
-        }
-        .faq-item {
-            margin-bottom: 20px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Health Plans & Financial Solutions</title>
+  <link href="styles.css" rel="stylesheet" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styling */
+
+
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      
+    }
+
+    section {
+        padding: 20px;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        .faq-item button {
-            background: #2a2a2a;
-            color: #fff;
-            width: 100%;
-            padding: 15px;
-            font-size: 1.1em;
-            text-align: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            position: relative;
-        }
-        .faq-item button:after {
-            content: '+';
-            position: absolute;
-            right: 20px;
-            font-size: 1.2em;
-        }
-        .faq-item button.active:after {
-            content: '-';
-        }
-        .faq-content {
-            display: none;
-            padding: 15px;
-            font-size: 1em;
-            line-height: 1.6;
-            background: #f1f1f1;
-        }
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
-        .feedback-form {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+    }
+    section p {
+        margin-bottom: 40px;
+    }
 
-.feedback-form h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #2a2a2a;
-}
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #283c63, #6394bc);
 
-.feedback-form p {
-    font-size: 1em;
-    margin-bottom: 20px;
-    color: #666;
-}
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #e0eaf4;
+      margin-bottom: 20px;
+    }
 
-    </style>
+    .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            margin-top: 60px;
+        }
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      background-color: #003366;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .hero button:hover {
+      background-color: #0055a5;
+    }
+
+    /* Services Section */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+      
+    }
+
+    .service-box {
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+    }
+
+    .service-box:hover {
+      transform: scale(1.05);
+      background-color: #e0eaf4;
+      border-color: #003366;
+    }
+
+    .service-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    .service-box p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    /* FAQ Section */
+    .faq {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    .faq p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
     <hr>
@@ -132,59 +182,37 @@
         </div>
     </nav>
     </hr>
-
     <section class="hero">
-        <h1>Long-Term Care Insurance</h1>
-        <h2>Plan Today for a Secure Tomorrow</h2>
-    </section>
-    <section class="content">
-        <h3>Why Long-Term Care is Essential</h3>
-        <p>
-            Learn how Long-Term Care coverage provides the 
-            safety net everyone needs but few prepare for.
-            As we age and face unexpected medical events, 
-            the challenges can feel overwhelming without proper
-             coverage. Long-Term Care insurance ensures you have 
-             access to the care you need, easing the financial 
-             and emotional burden on your loved ones.
-            </p>
-            <p> 
-            Those closest to us often feel compelled to help during 
-            our most vulnerable moments, but this can drain their time 
-            and resources. Long-Term Care isn't just about protecting 
-            yourself—it&#39;s about giving your family peace of mind, too.
-        </p>
-        <h3>The Risks of Going Without It</h3>
-        <p>Without Long-Term Care insurance, you risk depleting your savings or relying on family members for costly caregiving. Studies show that the average cost of long-term care can exceed $100,000 annually. Don&#39;t leave your family unprepared or unprotected.</p>
+        <h1>Business Health Plans & Financial Solutions</h1>
+    <h2>Smart Solutions for Your Team's Health and Your Business's Wealth</h2>
+</section>
 
-        <h3>Interactive FAQs</h3>
-        <div class="faq">
-            <div class="faq-item">
-                <button>What is Long-Term Care?</button>
-                <div class="faq-content">
-                    <p>Long-Term Care refers to a range of services that help meet personal care needs over an extended period. This can include help with daily activities like bathing, dressing, and eating, as well as skilled medical care.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button>Who Needs Long-Term Care?</button>
-                <div class="faq-content">
-                    <p>Everyone is at risk of needing long-term care. About 70% of people over 65 will require some type of long-term care services during their lifetime.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button>How Can Long-Term Care Insurance Help?</button>
-                <div class="faq-content">
-                    <p>Long-Term Care insurance helps cover the costs of care, ensuring you have access to the services you need without exhausting your savings or burdening your family.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button>What Happens If I Don't Have Coverage?</button>
-                <div class="faq-content">
-                    <p>Without coverage, you may face significant out-of-pocket costs or rely on family members to provide care. This can create emotional and financial strain for everyone involved.</p>
-                </div>
-            </div>
+
+
+    <!-- Services Section -->
+    <section>
+      <h2>What We Offer</h2>
+      <p>We specialize in simplifying complex benefits and financial planning for businesses like yours. Whether you&#39;re looking to provide your team with top-tier health coverage or create a roadmap for your company&#39;s growth, we&#39;re here to help.</p>
+      <div class="services">
+        <div class="service-box">
+          <h3>Group Health Insurance Plans</h3>
+          <p>Tailored solutions to meet your employees&#39; needs and your budget.</p>
         </div>
+        <div class="service-box">
+          <h3>Business Financial Planning</h3>
+          <p>Smart strategies to grow and protect your assets.</p>
+        </div>
+        <div class="service-box">
+          <h3>Employee Benefits Consulting</h3>
+          <p>Expert advice on benefits packages that attract and retain top talent.</p>
+        </div>
+        <div class="service-box">
+          <h3>Retirement Planning for Businesses</h3>
+          <p>Set up 401(k)s or other retirement plans to secure your team&#39;s future.</p>
+        </div>
+      </div>
     </section>
+
     <style>
         .advisor-container {
             display: flex;
@@ -323,14 +351,18 @@
             background: #2c3e50;
         }
     </style>
-    
+        
     <div class="advisor-container">
         <section class="talk-to-an-advisor">
-            <h1>How Much Does a Policy Cost for You?</h1>
-            <p><em>Take the first step towards protecting your assets</em></p>
+            <h1>Reach out, We&#39;ll Quote You In Minutes</h1>
+            <p><em>Take a step towards protecting them</em></p>
             <a class="open-popup">Contact for Quote</a>
         </section>
-
+        <section class="talk-to-an-advisor">
+            <h1>Start the process</h1>
+            <p><em>Simply reach out by calling us, or clicking below and we&#39;ll get you applied within 10 minutes</em></p>
+            <a class="open-popup">Contact to Apply</a>
+        </section>
     </div>
     
     <div class="popup-overlay"></div>
@@ -452,14 +484,22 @@
             }
         });
     </script>
-
-<style>
+    
+    <!-- FAQ Section -->
+    <section class="faq">
+      <h3>Frequently Asked Questions</h3>
+      <p><strong>What types of businesses do you work with?</strong> We work with small to mid-sized businesses across various industries.</p>
+      <p><strong>How much do your services cost?</strong> Our consultation is free, and we customize plans to fit your budget.</p>
+      <p><strong>Do you offer individual health plans?</strong> We specialize in group plans but can advise on individual coverage too.</p>
+    </section>
+  </div>
+  <style>
     /* Disclosures styling*/
 .disclosure-section {
 background-color: #f9f9f9;
 border: 1px solid #ddd;
 border-radius: 8px;
-margin-top: 20px;
+margin-top: 200px;
 padding: 10px;
 font-size: 0.65em;
 font-style: italic;
@@ -502,25 +542,14 @@ transform: rotate(180deg);
 <h3 id="disclosure-header">Disclosures<span>&#x25BC;</span></h3>
 <div class="disclosure-content">
     <p> <em>
-        The information provided on this site is for educational purposes only and should not be construed as personal financial, legal, tax, or insurance advice.
-        Coverage options, features, and benefits may vary by state and insurance carrier. Please refer to your specific policy for detailed information.
-        Long-Term Care Insurance premiums, terms, and benefits are subject to underwriting approval. Insurance policies are not guaranteed to be issued, and rates may vary based on factors such as age, health, and state of residence.
+        The content on this website is for informational purposes only and should not be considered as legal, financial, or insurance advice. For personalized recommendations, please consult a licensed professional.
+        Submitting an application or receiving a quote does not guarantee approval for life insurance coverage. Approval is subject to the insurer&#39;s underwriting guidelines.
+        This site may contain links to third-party websites or services. We are not responsible for the accuracy or practices of these providers. Always verify terms directly with the provider.
         For personalized advice or quotes, please contact us directly. Policy specifics, including costs and eligibility, will be provided upon request after consultation.
-        The average costs mentioned are estimates and may not reflect the actual cost of long-term care services in your area. Costs are subject to change based on location, inflation, and other market conditions.
-        Long-Term Care Insurance policies require medical underwriting. Not all applicants may qualify for coverage. Pre-existing conditions may affect eligibility or result in higher premiums.
-        Some states offer Long-Term Care Partnership Programs, which may allow policyholders to protect assets if they need to apply for Medicaid. Contact us or your state&#39;s Medicaid office for more information.
-        Information provided through this site is handled in accordance with our Privacy Policy. We do not sell or share your personal information without your consent.
+        Personal information provided on this site will be used to provide quotes and services as requested. Please review our Privacy Policy for details.
         This page is designed to be accessible to all users. If you encounter any difficulties accessing the content, please contact us at <a href="mailto:contact@hurstbournewealthmanagement.com">contact@hurstbournewealthmanagement.com</a>.
-
-
-
-
-
-
-
-
-
-
+        We do not provide tax or legal advice. Consult with a qualified professional for information on how life insurance may affect your taxes or estate planning.
+        While we strive to provide accurate information, we are not responsible for errors, omissions, or inaccuracies. Use the information at your own risk.
     </em> </p>
 </div>
 </div>
@@ -534,37 +563,8 @@ disclosureHeader.addEventListener('click', () => {
     disclosureHeader.parentElement.classList.toggle('open');
 });
 </script>
-    <footer>
-        <p>&copy; 2024 Hurstbourne Financial and Insurance LLC. All Rights Reserved. <a href="contacts.html">Contact Us</a> for more information.</p>
-        <div class="footer-bottom">
-            <div class="disclosures">
-                <p>Hurstbourne Insurance and Financial provides all insurance-related services. Hurstbourne Wealth Management, LLC is a state-registered investment advisor in the Commonwealth of Kentucky. The information on this site is for educational purposes only and does not constitute personalized investment, tax, or legal advice.</p>
-            </div>
-            <div class="social-media">
-                <a href="https://linkedin.com/in/curren-khadey" target="_blank">
-                    <img src="icons/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="#">
-                    <img src="icons/facebook.svg" alt="Facebook">
-                </a>
-                <a href="#">
-                    <img src="icons/instagram.svg" alt="Instagram">
-                </a>
-                <a href="#">
-                    <img src="icons/twitter.svg" alt="Twitter">
-                </a>
-            </div>
-            <div class="important-links">
-                <a href="#">Business Continuity Plan</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Form ADV</a>
-                <a href="#">Form CRS</a>
-                <a href="#">Disclosures</a>
-
-            </div>
-        </div>
-    </footer>
-    <script src="scripts.js"></script> <!-- Link to the external JS file -->
-
+  <footer>
+    <p>© 2025 Hurstbourne Insurance and Financial LLC. All rights reserved.</p>
+  </footer>
 </body>
 </html>

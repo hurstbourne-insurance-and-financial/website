@@ -1,3 +1,5 @@
+
+//NAV HAMBURGER
 function toggleMenu() {
   const menu = document.querySelector('.menu-container');
   menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
@@ -17,4 +19,15 @@ function toggleMenu() {
     });
 });
 
-  
+
+
+
+//DISCLOSURES
+const disclosureHeader = document.getElementById('disclosure-header');
+const disclosureContent = document.querySelector('.disclosure-content');
+
+disclosureHeader.addEventListener('click', () => {
+    disclosureContent.style.display = 
+        disclosureContent.style.display === 'block' ? 'none' : 'block';
+    disclosureHeader.parentElement.classList.toggle('open');
+});

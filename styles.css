@@ -47,6 +47,7 @@ margin-left: -200px;
 .logo-text {
   color: #fff;
   font-weight: bold;
+  font-family: 'Playfair Display', serif;
   font-size: 3.5em;
 }
 
@@ -170,12 +171,12 @@ nav div {
       }
   
       .logo-image {
-          max-height: 100px; /* Resize logo for smaller screens */
+          max-height: 80px; /* Resize logo for smaller screens */
           margin-left: 0;
       }
   
       .logo-text {
-          font-size: 2.5em; /* Adjust text size */
+          font-size: 1.5em; /* Adjust text size */
       }
   
       nav ul {
@@ -246,7 +247,12 @@ nav div {
   }
 }
 
-  
+  @media (max-width: 768px) {
+  nav {
+    padding: 0.5em 1em; /* Reduce padding for smaller screens */
+    flex-direction: row; /* Change layout to horizontal if needed */
+  }
+}
   .container {
     padding: 3em 2em;
     max-width: 1100px;
@@ -344,30 +350,37 @@ section p {
 
 
 
-  .hero {
-    margin-top: 120px; /* Adjust for fixed nav bar */
-    background-color: rgba(43, 106, 150, 0.7);
-    color: #fff;
-    padding: 60px ;
-    text-align: center;
-    margin-right: 200px;
-    margin-left: 200px;
-    border-radius: 10px; /* Optional: Adds rounded corners for a modern look */
+
+
+.hero {
+  background: linear-gradient(135deg, #2c3e50, #6394bc);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 10px; /* Optional: Adds rounded corners for a modern look */
+  margin-top: 120px; /* Adjust for fixed nav bar */  
+  margin-right: 200px;
+  margin-left: 200px;
 
 }
 
 .hero h1 {
-    font-size: 2.8em;
-    font-weight: bold
-    
-
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-top: 80px;
 }
 
-.hero h2 {
-    font-size: 2em;
-    margin: 0 0 15px;
-    animation: fadeInUp 1s ease-in-out;
 
+
+
+.hero h2 {
+  font-size: 1.5em;
+  animation: fadeInUp 1s ease-in-out;
+  font-style: italic; /* Add this line to make the text italic */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  margin-top: 40px;
+  margin-bottom: 1px;
 }
 
 .hero p {
@@ -649,3 +662,49 @@ footer a:hover {
         padding: 0.8em; /* Adjust button padding */
     }
 }
+
+
+
+       /* Disclosures styling*/
+       .disclosure-section {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 0.65em;
+        font-style: italic;
+        color: #555;
+        cursor: pointer;
+    }
+    
+    .disclosure-section h3 {
+        font-size: 1.2em;
+        margin: 0;
+        color: #2c3e50;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+    }
+    
+    .disclosure-section h3 span {
+        font-size: 1.2em;
+        transition: transform 0.2s;
+    }
+    
+    .disclosure-content {
+        display: none;
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+    
+    .disclosure-content p {
+        margin: 5px 0;
+    }
+    
+    .disclosure-section.open h3 span {
+        transform: rotate(180deg);
+    }
+    
+    
